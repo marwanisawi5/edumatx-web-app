@@ -65017,7 +65017,7 @@ return A.h(A.apf(a.gcU()).MJ(),$async$IC)
 case 5:c=a0
 case 4:if(c==null)throw A.f(A.cF("Could not read file data."))
 p=a.b.toLowerCase()
-if(B.e.hr(p,".pdf")){if(c.length>5242880)throw A.f(A.cF("PDF exceeds 5MB limit."))
+if(B.e.hr(p,".pdf")){if(c.length>15728640)throw A.f(A.cF("PDF exceeds 15 MB limit."))
 q=new A.ar(c,"pdf")
 s=1
 break}if(!(B.e.hr(p,".jpg")||B.e.hr(p,".jpeg")||B.e.hr(p,".png")||B.e.hr(p,".webp"))){q=null
@@ -65045,7 +65045,7 @@ l.aBS()
 l.aBW()
 l.ajl(80)
 d=new Uint8Array(A.b0(l.aQK(m,B.vV)))
-if(d.length>5242880)throw A.f(A.cF("Image is still larger than 5MB after compression."))
+if(d.length>15728640)throw A.f(A.cF("Image is still larger than 15 MB after compression."))
 q=new A.ar(d,B.c.gam(p.split(".")))
 s=1
 break
@@ -65259,7 +65259,7 @@ aH7(a){this.a4(new A.aTt(this,a))},
 aAZ(){var s,r,q=this,p=q.d,o=p.length
 if(o===0){q.a4(new A.aTo(q))
 return}for(s=0,r=0;r<o;++r)s+=p[r].e
-if(s>5242880){q.a4(new A.aTp(q))
+if(s>15728640){q.a4(new A.aTp(q))
 return}q.a4(new A.aTq(q))
 o=q.a
 o.aWr(o.c.a,p)},
@@ -65347,7 +65347,7 @@ A.aTo.prototype={
 $0(){this.a.e="There is no file attached"},
 $S:0}
 A.aTp.prototype={
-$0(){this.a.e="Total files exceed 5 MB limit"},
+$0(){this.a.e="Total files exceed 15 MB limit"},
 $S:0}
 A.aTq.prototype={
 $0(){this.a.e=null},
